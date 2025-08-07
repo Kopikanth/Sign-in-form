@@ -1,0 +1,64 @@
+.login{
+    width: 570px;
+    height: 590px;
+    background-color: white;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1{
+    font-size: 40px;
+    color: rgb(65, 26, 97);
+    margin-top: 80px;
+    position: relative;
+}
+
+.login h1::after{
+    content: "";
+    height: 5px;
+    width: 50px;
+    background: rgb(65, 26, 97);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 3px;
+}
+
+.login-detail{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 165px;
+}
+
+.login p{
+    width: 450px;
+    margin-top: 30px;
+    font-size: 17px;
+    color: rgb(122, 120, 120);
+}
+
+.login p span{
+    color: rgb(65, 26, 97);
+    cursor: pointer;
+}
+
+.login-buttons{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.default-button.login-signup-button{
+    color: rgb(122, 120, 120);
+}
+
+.default-button.login-login-button{
+    color: white;
+    background: rgb(102, 42, 151);
+}

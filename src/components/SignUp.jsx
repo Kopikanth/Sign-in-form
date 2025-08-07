@@ -5,19 +5,19 @@ import pass from "./Assets/password.png";
 import DetailContainer from "./DetailContainer";
 import CustomButton from "./CustomButton";
 
-export const SignUp = () => {
+export const SignUp = ({signupClass, signupStyle, loginButtonClick}) => {
 
     return (
-        <div className="sign-up">
+        <div className={`sign-up ${signupClass}`} style={signupStyle}>
             <h1>Sign Up</h1>
             <div className="signup-detail">
                 <DetailContainer icon={person} placeholderData="Name" />
                 <DetailContainer icon={email} placeholderData="Email id" />
-                <DetailContainer icon={person} placeholderData="Password" className="password" />
+                <DetailContainer icon={pass} placeholderData="Password" className="password" type={"password"}/>
             </div>
             <div className="signup-buttons">
                 <CustomButton buttonName={"Sign Up"} className="signup-signup-button"/>
-                <CustomButton buttonName={"Login"} className={"signup-login-button"}/>
+                <CustomButton buttonName={"Login"} className="signup-login-button" buttonClick={loginButtonClick}/>
             </div>
         </div>
     );
